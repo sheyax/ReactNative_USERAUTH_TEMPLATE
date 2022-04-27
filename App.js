@@ -1,10 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import DataFetch from './src/components/DataFetch'
+import tw from 'tailwind-react-native-classnames'
+import DataSend from './src/components/DataSend';
+import Navigator from './src/Navigation';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <View style={tw` p-10 bg-gray-200 h-full`}>
+      
+     <Navigator/>
       <StatusBar style="auto" />
     </View>
   );
